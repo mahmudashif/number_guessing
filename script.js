@@ -30,8 +30,18 @@ p1btn.addEventListener("click", function () {
                 p2btn.classList.remove("d-none")
                 p1.classList.add("d-none")
                 p1btn.classList.add("d-none")
-
             }
         }
+    }
+})
+
+p2btn.addEventListener("click", function () {
+    output.innerHTML = p2.value
+
+    if (p1.value == p2.value) {
+        output.innerHTML = "Player two win"
+    }
+    else {
+        output.innerHTML = "Player one win"
     }
 })
